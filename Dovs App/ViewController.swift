@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import iAd
+var bannerView: ADBannerView!
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, ADBannerViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var bannerView: ADBannerView!
         // Do any additional setup after loading the view, typically from a nib.
+        bannerView = ADBannerView(adType: .Banner)
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        bannerView.delegate = self
+        bannerView.hidden = true
+        view.addSubview(bannerView)
+        
+        let viewsDictionary = ["bannerView": bannerView]
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
     }
 
     @IBAction func Button1(sender: AnyObject) {
