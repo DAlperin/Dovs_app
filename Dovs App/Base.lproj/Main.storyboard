@@ -28,14 +28,18 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-77-yOD">
                                         <rect key="frame" x="0.0" y="21" width="56" height="30"/>
-                                        <state key="normal" title="Browser"/>
+                                        <state key="normal" title="Browser">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="Button1:" destination="XBx-I2-wSD" eventType="touchUpInside" id="8Yt-rH-jOL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le5-Pw-lKf">
                                         <rect key="frame" x="0.0" y="51" width="70" height="30"/>
-                                        <state key="normal" title="Next page"/>
+                                        <state key="normal" title="Next page">
+                                            <color key="titleColor" red="0.12156862745098039" green="0.0" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="Button2:" destination="XBx-I2-wSD" eventType="touchUpInside" id="FOS-fT-XV7"/>
                                         </connections>
@@ -92,7 +96,7 @@
                                 <rect key="frame" x="354" y="18" width="30" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Go">
-                                    <color key="titleColor" red="0.50272676351012058" green="0.76092065935403275" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.10500964374943755" green="0.12360908845372542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="gocode:" destination="Gtk-Ek-jn8" eventType="touchUpInside" id="IeT-9z-u5t"/>
@@ -105,7 +109,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5e-8H-BB9">
                                 <rect key="frame" x="389" y="18" width="51" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.17254901960784313" green="0.12941176470588237" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="back:" destination="Gtk-Ek-jn8" eventType="touchUpInside" id="FyP-Nv-Lfu"/>
                                 </connections>
@@ -113,7 +119,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-x9-DCN">
                                 <rect key="frame" x="445" y="18" width="133" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="HomeScreen"/>
+                                <state key="normal" title="HomeScreen">
+                                    <color key="titleColor" red="0.19215686274509805" green="0.090196078431372548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="gohome:" destination="Gtk-Ek-jn8" eventType="touchUpInside" id="zjR-ar-3q9"/>
                                 </connections>
@@ -172,7 +180,7 @@
                                         <color key="backgroundColor" red="0.99782192672001613" green="0.99856528021456015" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Back home">
-                                            <color key="titleColor" red="1" green="0.071741149340000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.049811780877068945" green="0.13749629715127842" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="back:" destination="vrF-jj-GTp" eventType="touchUpInside" id="S9A-Sx-s8Z"/>
@@ -180,7 +188,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-od-thY">
                                         <rect key="frame" x="26" y="54" width="70" height="30"/>
-                                        <state key="normal" title="Next page"/>
+                                        <state key="normal" title="Next page">
+                                            <color key="titleColor" red="0.0" green="0.18379173432082307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="nextpage:" destination="vrF-jj-GTp" eventType="touchUpInside" id="Wv8-RU-OpP"/>
                                         </connections>
@@ -228,7 +238,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="325-me-1m7">
                                 <rect key="frame" x="283" y="285" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.064089004351195022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="back1:" destination="RQf-kd-ywE" eventType="touchUpInside" id="VBu-aD-J52"/>
                                 </connections>
@@ -251,6 +263,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sWh-fg-De2"/>
-        <segue reference="jWw-C2-5Ug"/>
+        <segue reference="hTW-Vr-Evp"/>
     </inferredMetricsTieBreakers>
 </document>
