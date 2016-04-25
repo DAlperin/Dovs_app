@@ -32,6 +32,12 @@ class ViewController4: UIViewController, UITextFieldDelegate{
         }
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    self.gocode(self)
+    self.websitetext.resignFirstResponder()
+    return true
+    }
+    
     @IBAction func gohome(sender: AnyObject) {
         self.performSegueWithIdentifier("webtohome", sender: self)
     }

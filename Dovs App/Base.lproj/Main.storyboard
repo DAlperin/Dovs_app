@@ -102,6 +102,9 @@
                                         <exclude reference="Ti7-cA-naN"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="Gtk-Ek-jn8" id="xgf-yb-TM2"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
                                 <rect key="frame" x="354" y="18" width="30" height="40"/>
