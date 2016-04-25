@@ -92,8 +92,8 @@
                                     <outlet property="delegate" destination="Gtk-Ek-jn8" id="xgf-yb-TM2"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
-                                <rect key="frame" x="355" y="18" width="30" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
+                                <rect key="frame" x="354" y="18" width="30" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Go">
                                     <color key="titleColor" red="0.10500964374943755" green="0.12360908845372542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
