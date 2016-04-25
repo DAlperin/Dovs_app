@@ -52,19 +52,11 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Dov Alperin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-Wd-tS9">
-                                <rect key="frame" x="225" y="775" width="150" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6TA-WY-gmJ"/>
-                            <constraint firstItem="E5d-Wd-tS9" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="Zaf-un-Xe0"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="oyE-OB-MUh"/>
-                            <constraint firstItem="E5d-Wd-tS9" firstAttribute="top" secondItem="0xW-4D-V2h" secondAttribute="bottom" constant="420" id="x9e-PW-QJ5"/>
                         </constraints>
                     </view>
                     <connections>
