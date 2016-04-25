@@ -10,6 +10,7 @@
 		1804642E1CBF0BCF0019A0C1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */; };
 		180464321CBFC2700019A0C1 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464311CBFC2700019A0C1 /* ViewController3.swift */; };
 		180464381CBFF0BE0019A0C1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464371CBFF0BE0019A0C1 /* ViewController4.swift */; };
+		184806EE1CCEA03600763E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184806ED1CCEA03600763E00 /* Images.xcassets */; };
 		18E2A4391CBEBEFE001DF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */; };
 		18E2A43B1CBEBEFE001DF460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A43A1CBEBEFE001DF460 /* ViewController.swift */; };
 		18E2A43E1CBEBEFE001DF460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A43C1CBEBEFE001DF460 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		180464311CBFC2700019A0C1 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		180464371CBFF0BE0019A0C1 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E2A43A1CBEBEFE001DF460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				18E2A43F1CBEBEFE001DF460 /* Assets.xcassets */,
 				18E2A4411CBEBEFE001DF460 /* LaunchScreen.storyboard */,
 				18E2A4441CBEBEFE001DF460 /* Info.plist */,
+				184806ED1CCEA03600763E00 /* Images.xcassets */,
 			);
 			path = "Dovs App";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E2A4431CBEBEFE001DF460 /* LaunchScreen.storyboard in Resources */,
+				184806EE1CCEA03600763E00 /* Images.xcassets in Resources */,
 				18E2A4401CBEBEFE001DF460 /* Assets.xcassets in Resources */,
 				18E2A43E1CBEBEFE001DF460 /* Main.storyboard in Resources */,
 			);
@@ -346,6 +350,7 @@
 		18E2A4531CBEBEFF001DF460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -359,6 +364,7 @@
 		18E2A4541CBEBEFF001DF460 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
