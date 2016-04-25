@@ -92,8 +92,8 @@
                                     <outlet property="delegate" destination="Gtk-Ek-jn8" id="xgf-yb-TM2"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
-                                <rect key="frame" x="354" y="18" width="30" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
+                                <rect key="frame" x="355" y="18" width="30" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Go">
                                     <color key="titleColor" red="0.10500964374943755" green="0.12360908845372542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-m1-t8d">
-                                <rect key="frame" x="240" y="244" width="121" height="112"/>
+                                <rect key="frame" x="240" y="244" width="121" height="116"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-9o-BRa">
                                         <rect key="frame" x="44" y="0.0" width="33" height="21"/>
@@ -176,7 +176,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-V0-QEq">
-                                        <rect key="frame" x="15" y="21" width="92" height="33"/>
+                                        <rect key="frame" x="15" y="21" width="91" height="33"/>
                                         <color key="backgroundColor" red="0.99782192672001613" green="0.99856528021456015" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Back home">
@@ -187,7 +187,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-od-thY">
-                                        <rect key="frame" x="26" y="54" width="70" height="30"/>
+                                        <rect key="frame" x="19" y="54" width="83" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Next page">
                                             <color key="titleColor" red="0.0" green="0.18379173432082307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -196,7 +197,7 @@
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qwl-s4-iHd">
-                                        <rect key="frame" x="0.0" y="84" width="121" height="29"/>
+                                        <rect key="frame" x="0.0" y="88" width="121" height="29"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -206,12 +207,16 @@
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="bbD-V0-QEq" firstAttribute="leading" secondItem="5kh-m1-t8d" secondAttribute="leading" constant="15" id="vn1-PB-Zpd"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" id="0k7-15-kRq"/>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="Jlq-nm-Hrv"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="leading" secondItem="9hg-1n-yFt" secondAttribute="leading" constant="240" id="H1a-92-nsY"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="jD1-yG-2fd"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="top" secondItem="TlE-Jc-Xno" secondAttribute="bottom" constant="224" id="uOx-2a-Xqo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -237,7 +242,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="325-me-1m7">
-                                <rect key="frame" x="283" y="285" width="34" height="30"/>
+                                <rect key="frame" x="280" y="283" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.0" green="0.064089004351195022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
