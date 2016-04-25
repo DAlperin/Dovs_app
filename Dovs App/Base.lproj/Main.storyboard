@@ -51,22 +51,20 @@
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Q4t-HC-ITK" firstAttribute="leading" secondItem="0xW-4D-V2h" secondAttribute="leading" id="BAk-po-HYC"/>
-                                    <constraint firstAttribute="trailing" secondItem="Q4t-HC-ITK" secondAttribute="trailing" id="NdU-Cv-x4W"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BAk-po-HYC"/>
-                                        <exclude reference="NdU-Cv-x4W"/>
-                                    </mask>
-                                </variation>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Dov Alperin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-Wd-tS9">
+                                <rect key="frame" x="225" y="775" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6TA-WY-gmJ"/>
+                            <constraint firstItem="E5d-Wd-tS9" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="Zaf-un-Xe0"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="oyE-OB-MUh"/>
+                            <constraint firstItem="E5d-Wd-tS9" firstAttribute="top" secondItem="0xW-4D-V2h" secondAttribute="bottom" constant="420" id="x9e-PW-QJ5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -92,16 +90,8 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-b8-0Ea">
                                 <rect key="frame" x="20" y="23" width="332" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="Ti7-cA-naN"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ti7-cA-naN"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="Gtk-Ek-jn8" id="xgf-yb-TM2"/>
                                 </connections>
@@ -109,7 +99,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-MV-DWo">
                                 <rect key="frame" x="354" y="18" width="30" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Go"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="0.50272676351012058" green="0.76092065935403275" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="gocode:" destination="Gtk-Ek-jn8" eventType="touchUpInside" id="IeT-9z-u5t"/>
                                 </connections>
@@ -149,14 +141,8 @@
                             <constraint firstItem="s5e-8H-BB9" firstAttribute="centerY" secondItem="hVk-b8-0Ea" secondAttribute="centerY" id="TR9-4a-rKh"/>
                             <constraint firstItem="zdg-ne-iDY" firstAttribute="top" secondItem="hVk-b8-0Ea" secondAttribute="bottom" constant="5" id="Uso-zE-SJh"/>
                             <constraint firstItem="hVk-b8-0Ea" firstAttribute="leading" secondItem="vg4-hh-66J" secondAttribute="leadingMargin" id="XQj-EI-Hyp"/>
-                            <constraint firstItem="zdg-ne-iDY" firstAttribute="top" secondItem="vg4-hh-66J" secondAttribute="topMargin" constant="60" id="Xqp-rh-VJt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PZa-x9-DCN" secondAttribute="trailing" constant="2" id="diJ-Rs-COz"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Xqp-rh-VJt"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="webView" destination="zdg-ne-iDY" id="F24-aN-IND"/>
@@ -273,6 +259,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sWh-fg-De2"/>
-        <segue reference="hTW-Vr-Evp"/>
+        <segue reference="jWw-C2-5Ug"/>
     </inferredMetricsTieBreakers>
 </document>

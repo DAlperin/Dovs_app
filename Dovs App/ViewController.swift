@@ -18,7 +18,7 @@ class ViewController: UIViewController{
     @IBAction func Button1(sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
             "Go to browser?", preferredStyle: UIAlertControllerStyle.Alert)
-        print("otherbutton clicked")
+        
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
@@ -41,13 +41,13 @@ class ViewController: UIViewController{
     }
     
     @IBAction func Button2(sender: AnyObject) {
-        print("Button clicked")
+        
         let alertController = UIAlertController(title: "Dov's App", message:
             "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
-            print("OK Pressed")
+            
             self.okfunction()
             
             
@@ -58,7 +58,7 @@ class ViewController: UIViewController{
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
             UIAlertAction in
-            print("Cancel Pressed")
+            
             self.cancelfunction()
         }
         
@@ -74,19 +74,19 @@ class ViewController: UIViewController{
     }
     
     func okfunctionother() {
-        print("Ok button from otherbutton was pressed")
+        
     }
     
     func cancelfunctionother() {
-        print("Cancel button from otherbutton was pressed")
+        
     }
     
     func okfunction() {
-        print("Ok button from otherbutton was pressed")
+        
     }
     
     func cancelfunction() {
-        print("Cancel button from otherbutton was pressed")
+        
     }
 
     
