@@ -19,14 +19,14 @@ class ViewController2: UIViewController{
     @IBAction func back(sender: AnyObject) {
         self.performSegueWithIdentifier("back", sender: self)
     }
+    
     @IBAction func nextpage(sender: AnyObject) {
      self.performSegueWithIdentifier("2to3", sender: self)
     }
    
-    
-   
     @IBAction func Segment(sender: AnyObject) {
         switch sender.selectedSegmentIndex {
+            //toggle
         case 0:
             self.performSegueWithIdentifier("back1", sender: self)
         case 1:

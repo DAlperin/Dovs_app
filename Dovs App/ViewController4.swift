@@ -23,12 +23,14 @@ class ViewController4: UIViewController, UITextFieldDelegate{
             let requestURL = NSURL(string: website)
             let request = NSURLRequest(URL: requestURL!)
             webView.loadRequest(request)
+            //gets data from text feild and then displays that with webview
             }
         }
     
     @IBAction func back(sender: AnyObject) {
         if webView.canGoBack {
             webView.goBack()
+            //code for back button
         }
     }
     
@@ -36,10 +38,12 @@ class ViewController4: UIViewController, UITextFieldDelegate{
     self.gocode(self)
     self.websitetext.resignFirstResponder()
     return true
+        //makes go button on keyboard work
     }
     
     @IBAction func gohome(sender: AnyObject) {
         self.performSegueWithIdentifier("webtohome", sender: self)
+        //back to home button
     }
     
     override func didReceiveMemoryWarning() {

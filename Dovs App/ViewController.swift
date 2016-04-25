@@ -24,12 +24,13 @@ class ViewController: UIViewController{
             UIAlertAction in
             self.okfunctionother()
             self.performSegueWithIdentifier("toweb", sender: self)
+            //if ok from the popup alert is clicked
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
             UIAlertAction in
             self.cancelfunctionother()
-            
+            //if cancel from the popup alert is clicked
         }
         
         
@@ -47,19 +48,15 @@ class ViewController: UIViewController{
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
-            
             self.okfunction()
-            
-            
             self.performSegueWithIdentifier("onetotwo", sender: self)
-            
-            
+            //if ok from the popup alert is clicked
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
             UIAlertAction in
-            
             self.cancelfunction()
+            //if cancel from the popup alert is clicked
         }
         
         
@@ -74,24 +71,25 @@ class ViewController: UIViewController{
     }
     
     func okfunctionother() {
-        
+     //Button1 alert on ok click
     }
     
     func cancelfunctionother() {
-        
+     //Button1 alert on cancel click
     }
     
     func okfunction() {
-        
+        //Button2 alert on ok click
     }
     
     func cancelfunction() {
-        
+        //Button2 alert on cancel click
     }
 
     
     @IBAction func and2(sender: AnyObject) {
         switch sender.selectedSegmentIndex {
+            //toggle
         case 0:
         print()
         case 1:
