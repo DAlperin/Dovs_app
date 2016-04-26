@@ -56,12 +56,25 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-nX-9Do">
+                                <rect key="frame" x="60" y="534" width="480" height="66"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eqK-nX-9Do" firstAttribute="top" secondItem="5o6-9E-Owa" secondAttribute="bottom" constant="97" id="2Ro-yx-MYj"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="Gvc-2I-e38"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eqK-nX-9Do" secondAttribute="bottom" id="NFv-22-AQY"/>
+                            <constraint firstItem="eqK-nX-9Do" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" constant="426" id="YXb-bj-EI6"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="dW9-gZ-gd0"/>
+                            <constraint firstItem="eqK-nX-9Do" firstAttribute="centerX" secondItem="0xW-4D-V2h" secondAttribute="centerX" id="eEK-E1-3d1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Ro-yx-MYj"/>
+                                <exclude reference="YXb-bj-EI6"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <segue destination="vrF-jj-GTp" kind="show" identifier="onetotwo" id="jWw-C2-5Ug"/>
@@ -167,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-m1-t8d">
-                                <rect key="frame" x="240" y="244" width="121" height="116"/>
+                                <rect key="frame" x="240" y="244" width="121" height="115"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-9o-BRa">
                                         <rect key="frame" x="44" y="0.0" width="33" height="21"/>
@@ -176,9 +189,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-V0-QEq">
-                                        <rect key="frame" x="15" y="21" width="91" height="33"/>
+                                        <rect key="frame" x="15" y="21" width="91" height="32"/>
                                         <color key="backgroundColor" red="0.99782192672001613" green="0.99856528021456015" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Back home">
                                             <color key="titleColor" red="0.049811780877068945" green="0.13749629715127842" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -187,7 +200,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-od-thY">
-                                        <rect key="frame" x="19" y="54" width="83" height="34"/>
+                                        <rect key="frame" x="19" y="53" width="83" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Next page">
                                             <color key="titleColor" red="0.0" green="0.18379173432082307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,7 +210,7 @@
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qwl-s4-iHd">
-                                        <rect key="frame" x="0.0" y="88" width="121" height="29"/>
+                                        <rect key="frame" x="0.0" y="87" width="121" height="29"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -208,7 +221,7 @@
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="bbD-V0-QEq" firstAttribute="leading" secondItem="5kh-m1-t8d" secondAttribute="leading" constant="15" id="vn1-PB-Zpd"/>
+                                    <constraint firstItem="bbD-V0-QEq" firstAttribute="leading" secondItem="5kh-m1-t8d" secondAttribute="leading" constant="15" id="Y8v-Ju-MAH"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -268,7 +281,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sWh-fg-De2"/>
+        <segue reference="umn-73-qV6"/>
         <segue reference="jWw-C2-5Ug"/>
     </inferredMetricsTieBreakers>
 </document>
