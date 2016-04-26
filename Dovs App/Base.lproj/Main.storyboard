@@ -56,25 +56,12 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-nX-9Do">
-                                <rect key="frame" x="60" y="534" width="480" height="66"/>
-                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eqK-nX-9Do" firstAttribute="top" secondItem="5o6-9E-Owa" secondAttribute="bottom" constant="97" id="2Ro-yx-MYj"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="Gvc-2I-e38"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="eqK-nX-9Do" secondAttribute="bottom" id="NFv-22-AQY"/>
-                            <constraint firstItem="eqK-nX-9Do" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" constant="426" id="YXb-bj-EI6"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="dW9-gZ-gd0"/>
-                            <constraint firstItem="eqK-nX-9Do" firstAttribute="centerX" secondItem="0xW-4D-V2h" secondAttribute="centerX" id="eEK-E1-3d1"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2Ro-yx-MYj"/>
-                                <exclude reference="YXb-bj-EI6"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <segue destination="vrF-jj-GTp" kind="show" identifier="onetotwo" id="jWw-C2-5Ug"/>

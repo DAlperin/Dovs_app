@@ -7,30 +7,18 @@
 //
 
 import UIKit
-import iAd
-var bannerView: ADBannerView!
 
-class ViewController: UIViewController, ADBannerViewDelegate{
+class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var bannerView: ADBannerView!
-        // Do any additional setup after loading the view, typically from a nib.
-        bannerView = ADBannerView(adType: .Banner)
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        bannerView.delegate = self
-        bannerView.hidden = true
-        view.addSubview(bannerView)
         
-        let viewsDictionary = ["bannerView": bannerView]
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func Button1(sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
             "Go to browser?", preferredStyle: UIAlertControllerStyle.Alert)
-        
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
