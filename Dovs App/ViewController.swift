@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController{
 
@@ -98,6 +99,29 @@ class ViewController: UIViewController{
             break; 
         }
     }
+    
+    /* func authenticateUser() {
+    let context : LAContext = LAContext()
+        var error : NSError?
+        let myLocalizedReasonString : NSString = "Authentication is required"
+        if context.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {}
+        context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString as String, reply: { (success : Bool, evaluationError : NSError?) -> Void in })
+        
+        func loadData() {
+            // Will call this if authentification succededs
+            print("Success")
+           
+        }
+        
+        if success {
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+            loadData()
+            })
+        }
+        
+    } */
+    //above code is the start of a touch id authentification.
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

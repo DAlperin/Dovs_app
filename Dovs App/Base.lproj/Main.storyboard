@@ -264,6 +264,9 @@
                                     <action selector="back1:" destination="RQf-kd-ywE" eventType="touchUpInside" id="VBu-aD-J52"/>
                                 </connections>
                             </button>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-m3-Teg">
+                                <rect key="frame" x="186" y="147" width="240" height="128"/>
+                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -281,7 +284,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="hTW-Vr-Evp"/>
         <segue reference="umn-73-qV6"/>
-        <segue reference="jWw-C2-5Ug"/>
     </inferredMetricsTieBreakers>
 </document>

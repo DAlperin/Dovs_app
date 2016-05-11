@@ -11,7 +11,7 @@
 		180464321CBFC2700019A0C1 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464311CBFC2700019A0C1 /* ViewController3.swift */; };
 		180464381CBFF0BE0019A0C1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464371CBFF0BE0019A0C1 /* ViewController4.swift */; };
 		184806EE1CCEA03600763E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184806ED1CCEA03600763E00 /* Images.xcassets */; };
-		184806F21CCED80400763E00 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184806F11CCED80400763E00 /* iAd.framework */; };
+		18CC83D41CE28E1700ADC708 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC83D31CE28E1700ADC708 /* LocalAuthentication.framework */; };
 		18E2A4391CBEBEFE001DF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */; };
 		18E2A43B1CBEBEFE001DF460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A43A1CBEBEFE001DF460 /* ViewController.swift */; };
 		18E2A43E1CBEBEFE001DF460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A43C1CBEBEFE001DF460 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 		180464311CBFC2700019A0C1 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		180464371CBFF0BE0019A0C1 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		184806F11CCED80400763E00 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		18CC83D31CE28E1700ADC708 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E2A43A1CBEBEFE001DF460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184806F21CCED80400763E00 /* iAd.framework in Frameworks */,
+				18CC83D41CE28E1700ADC708 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 		18E2A42C1CBEBEFE001DF460 = {
 			isa = PBXGroup;
 			children = (
-				184806F11CCED80400763E00 /* iAd.framework */,
+				18CC83D31CE28E1700ADC708 /* LocalAuthentication.framework */,
 				18E2A4371CBEBEFE001DF460 /* Dovs App */,
 				18E2A44C1CBEBEFF001DF460 /* Dovs AppTests */,
 				18E2A4361CBEBEFE001DF460 /* Products */,
