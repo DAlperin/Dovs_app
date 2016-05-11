@@ -12,6 +12,8 @@
 		180464381CBFF0BE0019A0C1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464371CBFF0BE0019A0C1 /* ViewController4.swift */; };
 		184806EE1CCEA03600763E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184806ED1CCEA03600763E00 /* Images.xcassets */; };
 		185FDEDC1CE3AC6C00A759BA /* scn object.scn in Resources */ = {isa = PBXBuildFile; fileRef = 185FDEDB1CE3AC6C00A759BA /* scn object.scn */; };
+		185FDEDE1CE3AD1500A759BA /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FDEDD1CE3AD1500A759BA /* SceneKit.framework */; };
+		185FDEE01CE3AD1E00A759BA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FDEDF1CE3AD1E00A759BA /* JavaScriptCore.framework */; };
 		18E2A4391CBEBEFE001DF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */; };
 		18E2A43B1CBEBEFE001DF460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A43A1CBEBEFE001DF460 /* ViewController.swift */; };
 		18E2A43E1CBEBEFE001DF460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A43C1CBEBEFE001DF460 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		180464371CBFF0BE0019A0C1 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		185FDEDB1CE3AC6C00A759BA /* scn object.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "scn object.scn"; path = "../../scn object.scn"; sourceTree = "<group>"; };
+		185FDEDD1CE3AD1500A759BA /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		185FDEDF1CE3AD1E00A759BA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E2A43A1CBEBEFE001DF460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185FDEE01CE3AD1E00A759BA /* JavaScriptCore.framework in Frameworks */,
+				185FDEDE1CE3AD1500A759BA /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,8 @@
 		18E2A42C1CBEBEFE001DF460 = {
 			isa = PBXGroup;
 			children = (
+				185FDEDF1CE3AD1E00A759BA /* JavaScriptCore.framework */,
+				185FDEDD1CE3AD1500A759BA /* SceneKit.framework */,
 				18E2A4371CBEBEFE001DF460 /* Dovs App */,
 				18E2A44C1CBEBEFF001DF460 /* Dovs AppTests */,
 				18E2A4361CBEBEFE001DF460 /* Products */,
