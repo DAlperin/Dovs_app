@@ -167,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" verticalHuggingPriority="800" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-m1-t8d">
-                                <rect key="frame" x="240" y="244" width="121" height="115"/>
+                                <rect key="frame" x="240" y="243" width="121" height="115"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-9o-BRa">
                                         <rect key="frame" x="44" y="0.0" width="33" height="21"/>
@@ -175,22 +175,23 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-V0-QEq">
-                                        <rect key="frame" x="15" y="21" width="91" height="32"/>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-V0-QEq">
+                                        <rect key="frame" x="14" y="21" width="93" height="33"/>
                                         <color key="backgroundColor" red="0.99782192672001613" green="0.99856528021456015" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Back home">
-                                            <color key="titleColor" red="0.049811780877068945" green="0.13749629715127842" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="back:" destination="vrF-jj-GTp" eventType="touchUpInside" id="S9A-Sx-s8Z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-od-thY">
-                                        <rect key="frame" x="19" y="53" width="83" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-od-thY">
+                                        <rect key="frame" x="19" y="54" width="83" height="33"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Next page">
-                                            <color key="titleColor" red="0.0" green="0.18379173432082307" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="nextpage:" destination="vrF-jj-GTp" eventType="touchUpInside" id="Wv8-RU-OpP"/>
@@ -208,16 +209,23 @@
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="bbD-V0-QEq" firstAttribute="leading" secondItem="5kh-m1-t8d" secondAttribute="leading" constant="15" id="Y8v-Ju-MAH"/>
+                                    <constraint firstItem="bbD-V0-QEq" firstAttribute="leading" secondItem="5kh-m1-t8d" secondAttribute="leading" constant="14" id="wpW-29-hOZ"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="leading" secondItem="9hg-1n-yFt" secondAttribute="leading" constant="240" id="H1a-92-nsY"/>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="jD1-yG-2fd"/>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="top" secondItem="TlE-Jc-Xno" secondAttribute="bottom" constant="224" id="uOx-2a-Xqo"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="FZs-lF-MG6"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" id="NbZ-ki-Dv6"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="rZG-GE-GKk"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="top" secondItem="TlE-Jc-Xno" secondAttribute="bottom" constant="224" id="yhc-WP-saJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rZG-GE-GKk"/>
+                                <exclude reference="yhc-WP-saJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <segue destination="RQf-kd-ywE" kind="show" identifier="2to3" id="D1L-f5-afr"/>
