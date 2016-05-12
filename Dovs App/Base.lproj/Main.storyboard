@@ -26,22 +26,22 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-77-yOD">
-                                        <rect key="frame" x="0.0" y="21" width="56" height="30"/>
-                                        <state key="normal" title="Browser">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="Button1:" destination="XBx-I2-wSD" eventType="touchUpInside" id="8Yt-rH-jOL"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le5-Pw-lKf">
-                                        <rect key="frame" x="0.0" y="51" width="70" height="30"/>
+                                        <rect key="frame" x="0.0" y="21" width="70" height="30"/>
                                         <state key="normal" title="Next page">
                                             <color key="titleColor" red="0.12156862745098039" green="0.0" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="Button2:" destination="XBx-I2-wSD" eventType="touchUpInside" id="FOS-fT-XV7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-77-yOD">
+                                        <rect key="frame" x="0.0" y="51" width="56" height="30"/>
+                                        <state key="normal" title="Browser">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Button1:" destination="XBx-I2-wSD" eventType="touchUpInside" id="8Yt-rH-jOL"/>
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-4b-APf">
@@ -59,8 +59,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="Gvc-2I-e38"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="dW9-gZ-gd0"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="JZw-s1-Xvm"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="d0m-a5-iC3"/>
                         </constraints>
                     </view>
                     <connections>
