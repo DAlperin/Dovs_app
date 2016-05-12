@@ -91,9 +91,10 @@ class ViewController: UIViewController{
         switch sender.selectedSegmentIndex {
             //toggle
         case 0:
-        print()
+        print("View controller 1 toggle case 0")
         case 1:
             self.performSegueWithIdentifier("onetotwo", sender: self)
+            print("View controller 1 toggle case 1 Segue 'onetotwo' going to second page")
         default:
             break; 
         }
