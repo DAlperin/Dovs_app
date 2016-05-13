@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="256" y="289" width="39" height="51"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-fc-JJj">
-                                <rect key="frame" x="20" y="80" width="560" height="42"/>
+                                <rect key="frame" x="20" y="279" width="560" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWI-C1-lfr">
                                         <rect key="frame" x="238" y="0.0" width="84" height="21"/>
@@ -40,8 +40,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2XL-EH-H5v"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="7ID-rc-hbX"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IxW-HN-3w2"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OjR-m0-8DN"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="QdJ-V7-cTZ"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gOb-kt-ha4"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="lLj-4R-03v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Bv-fc-JJj" secondAttribute="trailing" id="zw3-v8-ClF"/>
                         </constraints>
@@ -50,7 +54,10 @@
                                 <exclude reference="f15-vY-TeB"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="7ID-rc-hbX"/>
+                                <exclude reference="OjR-m0-8DN"/>
                                 <exclude reference="QdJ-V7-cTZ"/>
+                                <exclude reference="gOb-kt-ha4"/>
                             </mask>
                         </variation>
                     </view>
