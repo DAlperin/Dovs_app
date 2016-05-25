@@ -23,14 +23,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-fc-JJj">
                                 <rect key="frame" x="20" y="279" width="560" height="42"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWI-C1-lfr">
-                                        <rect key="frame" x="238" y="0.0" width="84" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dovs app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWI-C1-lfr">
+                                        <rect key="frame" x="244" y="0.0" width="72" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="106-FB-H4C">
-                                        <rect key="frame" x="272" y="21" width="17" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By: Dov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="106-FB-H4C">
+                                        <rect key="frame" x="251" y="21" width="59" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -40,14 +40,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2XL-EH-H5v"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4K0-fg-dd5"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="7ID-rc-hbX"/>
-                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IxW-HN-3w2"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OjR-m0-8DN"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="QWw-pu-tGo"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="QdJ-V7-cTZ"/>
+                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Xqu-xx-Sv0"/>
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gOb-kt-ha4"/>
-                            <constraint firstItem="1Bv-fc-JJj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="lLj-4R-03v"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Bv-fc-JJj" secondAttribute="trailing" id="zw3-v8-ClF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">

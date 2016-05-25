@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Dovs App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18E2A4481CBEBEFF001DF460"
+               BuildableName = "Dovs AppTests.xctest"
+               BlueprintName = "Dovs AppTests"
+               ReferencedContainer = "container:Dovs App.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

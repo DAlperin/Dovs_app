@@ -12,9 +12,11 @@ class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    
 
     @IBAction func Button1(sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
