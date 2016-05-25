@@ -54,12 +54,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         //if push notifications failed with error
-        print("push notification errror: ", error)
+        print("Push notification errror: \(error)")
        
     }
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        //when recieved push notification
+        //when recieved push notificationz
         print(userInfo)
     }
     
