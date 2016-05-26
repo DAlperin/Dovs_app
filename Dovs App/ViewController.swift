@@ -14,10 +14,16 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBOutlet var name: UILabel!
     
+    override func motionEnded(motion: UIEventSubtype,
+                              withEvent event: UIEvent?) {
+        
+        if motion == .MotionShake{
+            self.name.text = "SHAKE YOUR BOOTY"
+        }
+    }
     
-    
-
     @IBAction func Button1(sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
             "Go to browser?", preferredStyle: UIAlertControllerStyle.Alert)

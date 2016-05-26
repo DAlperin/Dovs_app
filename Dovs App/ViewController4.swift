@@ -41,6 +41,8 @@ class ViewController4: UIViewController, UITextFieldDelegate{
         //makes go button on keyboard work
     }
     
+
+    
     @IBAction func gohome(sender: AnyObject) {
         self.performSegueWithIdentifier("webtohome", sender: self)
         //back to home button
