@@ -21,6 +21,13 @@ class ViewController: UIViewController{
         
         if motion == .MotionShake{
             self.name.text = "SHAKE YOUR BOOTY"
+            let alertController = UIAlertController(title: "YOU SHOOK THIS PHONE", message: "Cool huh", preferredStyle: UIAlertControllerStyle.Alert)
+            let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){
+                UIAlertAction in
+                print("SHAKED")
+            }
+          alertController.addAction(okButton)
+        self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     
