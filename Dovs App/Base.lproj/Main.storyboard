@@ -17,17 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-4D-V2h">
-                                <rect key="frame" x="240" y="246" width="121" height="109"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-Gm-8D2">
+                                <rect key="frame" x="175" y="579" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-4D-V2h">
+                                <rect key="frame" x="240" y="235" width="121" height="130"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdY-RM-vJF">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOVS APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-HC-ITK">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
+                                        <rect key="frame" x="0.0" y="21" width="82" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le5-Pw-lKf">
-                                        <rect key="frame" x="0.0" y="21" width="70" height="30"/>
+                                        <rect key="frame" x="0.0" y="42" width="70" height="30"/>
                                         <state key="normal" title="Next page">
                                             <color key="titleColor" red="0.12156862745098039" green="0.0" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -36,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-77-yOD">
-                                        <rect key="frame" x="0.0" y="51" width="56" height="30"/>
+                                        <rect key="frame" x="0.0" y="72" width="56" height="30"/>
                                         <state key="normal" title="Browser">
                                             <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -45,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-4b-APf">
-                                        <rect key="frame" x="0.0" y="81" width="121" height="29"/>
+                                        <rect key="frame" x="0.0" y="102" width="121" height="29"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -56,23 +68,28 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-Gm-8D2">
-                                <rect key="frame" x="175" y="579" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="JZw-s1-Xvm"/>
-                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="LIc-eV-bfq"/>
-                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="centerX" secondItem="0xW-4D-V2h" secondAttribute="centerX" id="bGM-yL-qhn"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="d0m-a5-iC3"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6xv-nk-JCh"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="9yx-Fj-k8x"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="AR0-Rc-4zC"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="top" secondItem="a7m-bO-y8f" secondAttribute="bottom" constant="226" id="Ewk-Kx-DAE"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="rjC-Fk-VLS"/>
+                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="shX-JL-Nf7"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="vV0-EN-gWo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ewk-Kx-DAE"/>
+                                <exclude reference="rjC-Fk-VLS"/>
+                                <exclude reference="vV0-EN-gWo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="name" destination="Q4t-HC-ITK" id="tSu-Kz-oR2"/>
+                        <outlet property="shook" destination="DdY-RM-vJF" id="RaF-aL-OgJ"/>
                         <segue destination="vrF-jj-GTp" kind="show" identifier="onetotwo" id="jWw-C2-5Ug"/>
                         <segue destination="Gtk-Ek-jn8" kind="show" identifier="toweb" id="VEq-U2-jZ7"/>
                     </connections>
@@ -232,7 +249,7 @@
                         <constraints>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="FZs-lF-MG6"/>
                             <constraint firstItem="jPF-tb-W5T" firstAttribute="bottom" secondItem="jOd-Kc-eH6" secondAttribute="top" id="H0o-Vk-0Fu"/>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" id="NbZ-ki-Dv6"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" constant="0.5" id="NbZ-ki-Dv6"/>
                             <constraint firstItem="jPF-tb-W5T" firstAttribute="centerX" secondItem="5kh-m1-t8d" secondAttribute="centerX" id="lYJ-72-CGM"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="rZG-GE-GKk"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="top" secondItem="TlE-Jc-Xno" secondAttribute="bottom" constant="224" id="yhc-WP-saJ"/>
@@ -301,7 +318,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jWw-C2-5Ug"/>
         <segue reference="umn-73-qV6"/>
-        <segue reference="hTW-Vr-Evp"/>
     </inferredMetricsTieBreakers>
 </document>

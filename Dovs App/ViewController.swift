@@ -13,16 +13,19 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.shook.hidden = true
     }
     @IBOutlet var name: UILabel!
+    @IBOutlet var shook: UILabel!
     
     override func motionEnded(motion: UIEventSubtype,
                               withEvent event: UIEvent?) {
         
         if motion == .MotionShake{
             self.name.text = "SHAKE YOUR BOOTY"
+            self.shook.hidden = false
             let alertController = UIAlertController(title: "YOU SHOOK THIS PHONE", message: "Cool huh", preferredStyle: UIAlertControllerStyle.Alert)
-            let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){
+            let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
                 UIAlertAction in
                 print("SHAKED")
             }
