@@ -27,7 +27,7 @@ class ViewController: UIViewController{
             let alertController = UIAlertController(title: "YOU SHOOK THIS PHONE", message: "Cool huh", preferredStyle: UIAlertControllerStyle.Alert)
             let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
                 UIAlertAction in
-                print("SHAKED")
+                print("SHOOK")
             }
           alertController.addAction(okButton)
         self.presentViewController(alertController, animated: true, completion: nil)

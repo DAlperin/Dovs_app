@@ -74,18 +74,8 @@
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6xv-nk-JCh"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="9yx-Fj-k8x"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="AR0-Rc-4zC"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="top" secondItem="a7m-bO-y8f" secondAttribute="bottom" constant="226" id="Ewk-Kx-DAE"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="rjC-Fk-VLS"/>
                             <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="shX-JL-Nf7"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="vV0-EN-gWo"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Ewk-Kx-DAE"/>
-                                <exclude reference="rjC-Fk-VLS"/>
-                                <exclude reference="vV0-EN-gWo"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="name" destination="Q4t-HC-ITK" id="tSu-Kz-oR2"/>
@@ -152,6 +142,12 @@
                                     <action selector="gohome:" destination="Gtk-Ek-jn8" eventType="touchUpInside" id="zjR-ar-3q9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-7x-1jh">
+                                <rect key="frame" x="175" y="579" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,10 +159,12 @@
                             <constraint firstItem="s5e-8H-BB9" firstAttribute="leading" secondItem="ouk-MV-DWo" secondAttribute="trailing" constant="5" id="GKR-WL-YJ7"/>
                             <constraint firstItem="CLy-l3-gBJ" firstAttribute="top" secondItem="zdg-ne-iDY" secondAttribute="bottom" constant="20" id="Ggd-Rc-r7Q"/>
                             <constraint firstItem="hVk-b8-0Ea" firstAttribute="top" secondItem="HRN-sM-zI9" secondAttribute="bottom" constant="3" id="Jft-mv-ZCp"/>
+                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="bottom" secondItem="CLy-l3-gBJ" secondAttribute="top" id="RLG-gO-8hh"/>
                             <constraint firstItem="zdg-ne-iDY" firstAttribute="leading" secondItem="vg4-hh-66J" secondAttribute="leadingMargin" id="ROu-Dh-9gc"/>
                             <constraint firstItem="s5e-8H-BB9" firstAttribute="centerY" secondItem="hVk-b8-0Ea" secondAttribute="centerY" id="TR9-4a-rKh"/>
                             <constraint firstItem="zdg-ne-iDY" firstAttribute="top" secondItem="hVk-b8-0Ea" secondAttribute="bottom" constant="5" id="Uso-zE-SJh"/>
                             <constraint firstItem="hVk-b8-0Ea" firstAttribute="leading" secondItem="vg4-hh-66J" secondAttribute="leadingMargin" id="XQj-EI-Hyp"/>
+                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="centerX" secondItem="zdg-ne-iDY" secondAttribute="centerX" id="Xut-XC-UTX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PZa-x9-DCN" secondAttribute="trailing" constant="2" id="diJ-Rs-COz"/>
                         </constraints>
                     </view>
@@ -318,7 +316,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sWh-fg-De2"/>
         <segue reference="jWw-C2-5Ug"/>
-        <segue reference="umn-73-qV6"/>
     </inferredMetricsTieBreakers>
 </document>

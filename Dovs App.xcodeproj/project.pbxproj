@@ -66,6 +66,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183C7EBA1D00AB5100CF496F /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A43A1CBEBEFE001DF460 /* ViewController.swift */,
+				1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */,
+				180464311CBFC2700019A0C1 /* ViewController3.swift */,
+				180464371CBFF0BE0019A0C1 /* ViewController4.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		183C7EBB1D00AD2400CF496F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A43C1CBEBEFE001DF460 /* Main.storyboard */,
+				18E2A4411CBEBEFE001DF460 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		18E2A42C1CBEBEFE001DF460 = {
 			isa = PBXGroup;
 			children = (
@@ -89,13 +109,9 @@
 			children = (
 				185FDEDB1CE3AC6C00A759BA /* scn object.scn */,
 				18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */,
-				18E2A43A1CBEBEFE001DF460 /* ViewController.swift */,
-				18E2A43C1CBEBEFE001DF460 /* Main.storyboard */,
-				180464371CBFF0BE0019A0C1 /* ViewController4.swift */,
-				180464311CBFC2700019A0C1 /* ViewController3.swift */,
-				1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */,
+				183C7EBB1D00AD2400CF496F /* Storyboards */,
+				183C7EBA1D00AB5100CF496F /* View controllers */,
 				18E2A43F1CBEBEFE001DF460 /* Assets.xcassets */,
-				18E2A4411CBEBEFE001DF460 /* LaunchScreen.storyboard */,
 				18E2A4441CBEBEFE001DF460 /* Info.plist */,
 				184806ED1CCEA03600763E00 /* Images.xcassets */,
 			);
