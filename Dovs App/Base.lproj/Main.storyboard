@@ -19,7 +19,11 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-Gm-8D2">
                                 <rect key="frame" x="175" y="579" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2xc-ks-YJo"/>
+                                    <constraint firstAttribute="width" constant="250" id="FaW-1I-je5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -72,9 +76,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6xv-nk-JCh"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="9yx-Fj-k8x"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="AR0-Rc-4zC"/>
-                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="shX-JL-Nf7"/>
+                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="centerX" secondItem="0xW-4D-V2h" secondAttribute="centerX" id="Zyx-Zd-YDh"/>
+                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="htf-OM-urG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -144,7 +148,11 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-7x-1jh">
                                 <rect key="frame" x="175" y="579" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qad-Uc-YFM"/>
+                                    <constraint firstAttribute="width" constant="250" id="t1H-NZ-cPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -159,12 +167,12 @@
                             <constraint firstItem="s5e-8H-BB9" firstAttribute="leading" secondItem="ouk-MV-DWo" secondAttribute="trailing" constant="5" id="GKR-WL-YJ7"/>
                             <constraint firstItem="CLy-l3-gBJ" firstAttribute="top" secondItem="zdg-ne-iDY" secondAttribute="bottom" constant="20" id="Ggd-Rc-r7Q"/>
                             <constraint firstItem="hVk-b8-0Ea" firstAttribute="top" secondItem="HRN-sM-zI9" secondAttribute="bottom" constant="3" id="Jft-mv-ZCp"/>
-                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="bottom" secondItem="CLy-l3-gBJ" secondAttribute="top" id="RLG-gO-8hh"/>
+                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="bottom" secondItem="CLy-l3-gBJ" secondAttribute="top" id="N2D-sd-vEg"/>
                             <constraint firstItem="zdg-ne-iDY" firstAttribute="leading" secondItem="vg4-hh-66J" secondAttribute="leadingMargin" id="ROu-Dh-9gc"/>
                             <constraint firstItem="s5e-8H-BB9" firstAttribute="centerY" secondItem="hVk-b8-0Ea" secondAttribute="centerY" id="TR9-4a-rKh"/>
                             <constraint firstItem="zdg-ne-iDY" firstAttribute="top" secondItem="hVk-b8-0Ea" secondAttribute="bottom" constant="5" id="Uso-zE-SJh"/>
                             <constraint firstItem="hVk-b8-0Ea" firstAttribute="leading" secondItem="vg4-hh-66J" secondAttribute="leadingMargin" id="XQj-EI-Hyp"/>
-                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="centerX" secondItem="zdg-ne-iDY" secondAttribute="centerX" id="Xut-XC-UTX"/>
+                            <constraint firstItem="Tg1-7x-1jh" firstAttribute="centerX" secondItem="zdg-ne-iDY" secondAttribute="centerX" id="c8a-6o-AdR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PZa-x9-DCN" secondAttribute="trailing" constant="2" id="diJ-Rs-COz"/>
                         </constraints>
                     </view>
@@ -238,7 +246,11 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPF-tb-W5T">
                                 <rect key="frame" x="175" y="579" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="O57-a9-ea2"/>
+                                    <constraint firstAttribute="width" constant="250" id="yVo-1Q-X1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -246,9 +258,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="FZs-lF-MG6"/>
-                            <constraint firstItem="jPF-tb-W5T" firstAttribute="bottom" secondItem="jOd-Kc-eH6" secondAttribute="top" id="H0o-Vk-0Fu"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" constant="0.5" id="NbZ-ki-Dv6"/>
-                            <constraint firstItem="jPF-tb-W5T" firstAttribute="centerX" secondItem="5kh-m1-t8d" secondAttribute="centerX" id="lYJ-72-CGM"/>
+                            <constraint firstItem="jPF-tb-W5T" firstAttribute="bottom" secondItem="jOd-Kc-eH6" secondAttribute="top" id="XZz-K3-b3D"/>
+                            <constraint firstItem="jPF-tb-W5T" firstAttribute="centerX" secondItem="5kh-m1-t8d" secondAttribute="centerX" id="fYH-b3-ji4"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="rZG-GE-GKk"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="top" secondItem="TlE-Jc-Xno" secondAttribute="bottom" constant="224" id="yhc-WP-saJ"/>
                         </constraints>
@@ -293,7 +305,11 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWB-Bq-Q4N">
                                 <rect key="frame" x="175" y="579" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gcl-C0-ENg"/>
+                                    <constraint firstAttribute="width" constant="250" id="f0m-Wg-Dyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -301,9 +317,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="325-me-1m7" firstAttribute="centerX" secondItem="bkA-C4-Wpa" secondAttribute="centerX" id="LQ7-f1-8BZ"/>
-                            <constraint firstItem="dWB-Bq-Q4N" firstAttribute="centerX" secondItem="325-me-1m7" secondAttribute="centerX" id="Vhh-N9-Zdl"/>
+                            <constraint firstItem="dWB-Bq-Q4N" firstAttribute="centerX" secondItem="325-me-1m7" secondAttribute="centerX" id="T9l-m4-TMh"/>
+                            <constraint firstItem="dWB-Bq-Q4N" firstAttribute="bottom" secondItem="Nq8-Nl-cKQ" secondAttribute="top" id="VQ4-9T-uFu"/>
                             <constraint firstItem="325-me-1m7" firstAttribute="centerY" secondItem="bkA-C4-Wpa" secondAttribute="centerY" id="jTO-oD-CDZ"/>
-                            <constraint firstItem="dWB-Bq-Q4N" firstAttribute="bottom" secondItem="Nq8-Nl-cKQ" secondAttribute="top" id="qtN-TQ-BqP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -317,6 +333,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sWh-fg-De2"/>
-        <segue reference="jWw-C2-5Ug"/>
+        <segue reference="hTW-Vr-Evp"/>
     </inferredMetricsTieBreakers>
 </document>

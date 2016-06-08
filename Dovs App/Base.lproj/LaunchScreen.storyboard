@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f15-vY-TeB">
-                                <rect key="frame" x="256" y="289" width="39" height="51"/>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-fc-JJj">
                                 <rect key="frame" x="20" y="279" width="560" height="42"/>
                                 <subviews>
@@ -49,9 +46,6 @@
                             <constraint firstItem="1Bv-fc-JJj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gOb-kt-ha4"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="f15-vY-TeB"/>
-                            </mask>
                             <mask key="constraints">
                                 <exclude reference="7ID-rc-hbX"/>
                                 <exclude reference="OjR-m0-8DN"/>
