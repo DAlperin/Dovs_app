@@ -109,12 +109,10 @@
 		18E2A4371CBEBEFE001DF460 /* Dovs App */ = {
 			isa = PBXGroup;
 			children = (
-				18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */,
+				18E9EFB01D0894480076D452 /* MISSION CRITICAL */,
 				183C7EBB1D00AD2400CF496F /* Storyboards */,
 				183C7EBA1D00AB5100CF496F /* View controllers */,
-				18E2A43F1CBEBEFE001DF460 /* Assets.xcassets */,
-				18E2A4441CBEBEFE001DF460 /* Info.plist */,
-				184806ED1CCEA03600763E00 /* Images.xcassets */,
+				18E9EFAF1D0894270076D452 /* Asset catalogs */,
 			);
 			path = "Dovs App";
 			sourceTree = "<group>";
@@ -134,6 +132,24 @@
 				18E9EFAC1D0890C80076D452 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18E9EFAF1D0894270076D452 /* Asset catalogs */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A43F1CBEBEFE001DF460 /* Assets.xcassets */,
+				184806ED1CCEA03600763E00 /* Images.xcassets */,
+			);
+			name = "Asset catalogs";
+			sourceTree = "<group>";
+		};
+		18E9EFB01D0894480076D452 /* MISSION CRITICAL */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */,
+				18E2A4441CBEBEFE001DF460 /* Info.plist */,
+			);
+			name = "MISSION CRITICAL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
