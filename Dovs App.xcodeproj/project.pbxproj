@@ -16,6 +16,7 @@
 		18E2A43E1CBEBEFE001DF460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A43C1CBEBEFE001DF460 /* Main.storyboard */; };
 		18E2A4401CBEBEFE001DF460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A43F1CBEBEFE001DF460 /* Assets.xcassets */; };
 		18E2A4431CBEBEFE001DF460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2A4411CBEBEFE001DF460 /* LaunchScreen.storyboard */; };
+		18E9EFAD1D0890C80076D452 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9EFAC1D0890C80076D452 /* MapKit.framework */; };
 		18F25B231D01C19F00AD3C46 /* Dovs_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F25B221D01C19F00AD3C46 /* Dovs_AppTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		18E2A4441CBEBEFE001DF460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E2A4491CBEBEFF001DF460 /* Dovs AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dovs AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A44F1CBEBEFF001DF460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9EFAC1D0890C80076D452 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18F25B221D01C19F00AD3C46 /* Dovs_AppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dovs_AppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E9EFAD1D0890C80076D452 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		18E2A42C1CBEBEFE001DF460 = {
 			isa = PBXGroup;
 			children = (
+				18E9EFAE1D0890D50076D452 /* Frameworks */,
 				18E2A4371CBEBEFE001DF460 /* Dovs App */,
 				18E2A44C1CBEBEFF001DF460 /* Dovs AppTests */,
 				18E2A4361CBEBEFE001DF460 /* Products */,
@@ -122,6 +126,14 @@
 				18E2A44F1CBEBEFF001DF460 /* Info.plist */,
 			);
 			path = "Dovs AppTests";
+			sourceTree = "<group>";
+		};
+		18E9EFAE1D0890D50076D452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E9EFAC1D0890C80076D452 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +188,9 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = K53W56QQ98;
 						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
