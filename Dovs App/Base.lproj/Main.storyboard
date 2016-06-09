@@ -20,8 +20,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="COPYRIGHT 2016 DOV ALPERIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-Gm-8D2">
                                 <rect key="frame" x="175" y="579" width="250" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="2xc-ks-YJo"/>
-                                    <constraint firstAttribute="width" constant="250" id="FaW-1I-je5"/>
+                                    <constraint firstAttribute="height" constant="21" id="eJi-xE-Saz"/>
+                                    <constraint firstAttribute="width" constant="250" id="sn4-wd-F4e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,17 +75,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="6xv-nk-JCh"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="AR0-Rc-4zC"/>
-                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="centerX" secondItem="0xW-4D-V2h" secondAttribute="centerX" id="Zyx-Zd-YDh"/>
-                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="htf-OM-urG"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="Dno-Z9-Rs5"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="Dwe-ka-EJQ"/>
+                            <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="L9w-Wm-0hb"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="ib2-JK-uEh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="name" destination="Q4t-HC-ITK" id="tSu-Kz-oR2"/>
                         <outlet property="shook" destination="DdY-RM-vJF" id="RaF-aL-OgJ"/>
-                        <segue destination="vrF-jj-GTp" kind="show" identifier="onetotwo" id="jWw-C2-5Ug"/>
-                        <segue destination="Gtk-Ek-jn8" kind="show" identifier="toweb" id="VEq-U2-jZ7"/>
+                        <segue destination="vrF-jj-GTp" kind="showDetail" identifier="onetotwo" id="jWw-C2-5Ug"/>
+                        <segue destination="Gtk-Ek-jn8" kind="showDetail" identifier="toweb" id="VEq-U2-jZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDZ-aU-bQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,6 +333,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sWh-fg-De2"/>
-        <segue reference="hTW-Vr-Evp"/>
+        <segue reference="jWw-C2-5Ug"/>
     </inferredMetricsTieBreakers>
 </document>
