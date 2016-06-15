@@ -30,8 +30,6 @@ var z = 20
 var arby = y - z
 
 print(arby, blob, bob)
-
-
 /*if (total < 100) {
     print("YAY!!!")
     
