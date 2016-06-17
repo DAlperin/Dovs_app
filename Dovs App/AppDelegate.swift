@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notification = UILocalNotification()
         notification.fireDate = NSDate(timeIntervalSinceNow: 60) as Date
         notification.alertBody = "Hey you! You have not opened this app in a bit"
-        notification.alertAction = "be awesome!"
+        notification.alertAction = "Come On"
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.userInfo = ["CustomField1": "w00t"]
         UIApplication.shared().scheduleLocalNotification(notification)
