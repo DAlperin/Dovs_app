@@ -33,13 +33,6 @@
 			remoteGlobalIDString = 182375631D14397C00DC4DB7;
 			remoteInfo = DovAppExtension;
 		};
-		1823757F1D14AD4500DC4DB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86E0A711188DB16700BC71FD;
-			remoteInfo = BBUDebuggerTuckAway;
-		};
 		18E2A44A1CBEBEFF001DF460 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18E2A42D1CBEBEFE001DF460 /* Project object */;
@@ -73,7 +66,6 @@
 		1823756B1D14397D00DC4DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1823756D1D14397D00DC4DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182375751D143F1700DC4DB7 /* Dovs App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Dovs App.entitlements"; sourceTree = "<group>"; };
-		1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BBUDebuggerTuckAway.xcodeproj; path = ../../BBUDebuggerTuckAway/BBUDebuggerTuckAway.xcodeproj; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,14 +119,6 @@
 			path = ../DovAppExtension;
 			sourceTree = "<group>";
 		};
-		1823757C1D14AD4400DC4DB7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				182375801D14AD4500DC4DB7 /* BBUDebuggerTuckAway.xcplugin */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		183C7EBA1D00AB5100CF496F /* View controllers code */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +162,6 @@
 		18E2A4371CBEBEFE001DF460 /* Dovs App */ = {
 			isa = PBXGroup;
 			children = (
-				1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */,
 				182375671D14397D00DC4DB7 /* DovAppExtension */,
 				18E9EFB01D0894480076D452 /* MISSION CRITICAL */,
 				183C7EBB1D00AD2400CF496F /* Storyboards */,
@@ -334,12 +317,6 @@
 			mainGroup = 18E2A42C1CBEBEFE001DF460;
 			productRefGroup = 18E2A4361CBEBEFE001DF460 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1823757C1D14AD4400DC4DB7 /* Products */;
-					ProjectRef = 1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				18E2A4341CBEBEFE001DF460 /* Dovs App */,
@@ -348,16 +325,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		182375801D14AD4500DC4DB7 /* BBUDebuggerTuckAway.xcplugin */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BBUDebuggerTuckAway.xcplugin;
-			remoteRef = 1823757F1D14AD4500DC4DB7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		182375621D14397C00DC4DB7 /* Resources */ = {
@@ -654,6 +621,7 @@
 				182375731D14397D00DC4DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E2A4301CBEBEFE001DF460 /* Build configuration list for PBXProject "Dovs App" */ = {
 			isa = XCConfigurationList;
