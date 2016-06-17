@@ -64,6 +64,7 @@
 		182375681D14397D00DC4DB7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1823756B1D14397D00DC4DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1823756D1D14397D00DC4DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182375751D143F1700DC4DB7 /* Dovs App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Dovs App.entitlements"; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +199,7 @@
 		18E9EFB01D0894480076D452 /* MISSION CRITICAL */ = {
 			isa = PBXGroup;
 			children = (
+				182375751D143F1700DC4DB7 /* Dovs App.entitlements */,
 				18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */,
 				18E2A4441CBEBEFE001DF460 /* Info.plist */,
 			);
@@ -283,6 +285,9 @@
 						DevelopmentTeam = K53W56QQ98;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -540,6 +545,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dovs App/Dovs App.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -556,6 +562,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dovs App/Dovs App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
