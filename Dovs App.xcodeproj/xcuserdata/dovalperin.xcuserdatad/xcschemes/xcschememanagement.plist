@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DovAppExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Dovs App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>182375631D14397C00DC4DB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>18E2A4341CBEBEFE001DF460</key>
 		<dict>
 			<key>primary</key>

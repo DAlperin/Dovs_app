@@ -13,39 +13,39 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.shook.hidden = true
+        self.shook.isHidden = true
     }
     @IBOutlet var name: UILabel!
     @IBOutlet var shook: UILabel!
     
-    override func motionEnded(motion: UIEventSubtype,
-                              withEvent event: UIEvent?) {
+    override func motionEnded(_ motion: UIEventSubtype,
+                              with event: UIEvent?) {
         
-        if motion == .MotionShake{
+        if motion == .motionShake{
             self.name.text = "SHAKE YOUR BOOTY"
-            self.shook.hidden = false
-            let alertController = UIAlertController(title: "YOU SHOOK THIS PHONE", message: "Cool huh", preferredStyle: UIAlertControllerStyle.Alert)
-            let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
+            self.shook.isHidden = false
+            let alertController = UIAlertController(title: "YOU SHOOK THIS PHONE", message: "Cool huh", preferredStyle: UIAlertControllerStyle.alert)
+            let okButton = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) {
                 UIAlertAction in
-                print("SHOOK")
+                print("SHOOK", terminator: "")
             }
           alertController.addAction(okButton)
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
         }
     }
     
-    @IBAction func Button1(sender: AnyObject) {
+    @IBAction func Button1(_ sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
-            "Go to browser?", preferredStyle: UIAlertControllerStyle.Alert)
+            "Go to browser?", preferredStyle: UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
             self.okfunctionother()
-            self.performSegueWithIdentifier("toweb", sender: self)
+            self.performSegue(withIdentifier: "toweb", sender: self)
             //if ok from the popup alert is clicked
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
             UIAlertAction in
             self.cancelfunctionother()
             //if cancel from the popup alert is clicked
@@ -55,23 +55,23 @@ class ViewController: UIViewController{
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
  
     }
     
-    @IBAction func Button2(sender: AnyObject) {
+    @IBAction func Button2(_ sender: AnyObject) {
         
         let alertController = UIAlertController(title: "Dov's App", message:
-            "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
+            "Hello, world!", preferredStyle: UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
             self.okfunction()
-            self.performSegueWithIdentifier("onetotwo", sender: self)
+            self.performSegue(withIdentifier: "onetotwo", sender: self)
             //if ok from the popup alert is clicked
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
             UIAlertAction in
             self.cancelfunction()
             //if cancel from the popup alert is clicked
@@ -84,7 +84,7 @@ class ViewController: UIViewController{
         //alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         // alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil ))
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
 
     }
     
@@ -105,14 +105,14 @@ class ViewController: UIViewController{
     }
 
     
-    @IBAction func and2(sender: AnyObject) {
+    @IBAction func and2(_ sender: AnyObject) {
         switch sender.selectedSegmentIndex {
             //toggle
         case 0:
-        print("View controller 1 toggle case 0")
+        print("View controller 1 toggle case 0", terminator: "")
         case 1:
-            self.performSegueWithIdentifier("onetotwo", sender: self)
-            print("View controller 1 toggle case 1 Segue 'onetotwo' going to second page")
+            self.performSegue(withIdentifier: "onetotwo", sender: self)
+            print("View controller 1 toggle case 1 Segue 'onetotwo' going to second page", terminator: "")
         default:
             break; 
         }
@@ -148,3 +148,4 @@ class ViewController: UIViewController{
 
 }
 
+//ons

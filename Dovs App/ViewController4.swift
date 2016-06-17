@@ -16,25 +16,25 @@ class ViewController4: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var websitetext: UITextField!
     
-    @IBAction func gocode(sender: AnyObject) {
+    @IBAction func gocode(_ sender: AnyObject) {
     
         if let website = websitetext.text
         {
-            let requestURL = NSURL(string: website)
-            let request = NSURLRequest(URL: requestURL!)
+            let requestURL = URL(string: website)
+            let request = URLRequest(url: requestURL!)
             webView.loadRequest(request)
             //gets data from text feild and then displays that with webview
             }
         }
     
-    @IBAction func back(sender: AnyObject) {
+    @IBAction func back(_ sender: AnyObject) {
         if webView.canGoBack {
             webView.goBack()
             //code for back button
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     self.gocode(self)
     self.websitetext.resignFirstResponder()
     return true
@@ -43,8 +43,8 @@ class ViewController4: UIViewController, UITextFieldDelegate{
     
 
     
-    @IBAction func gohome(sender: AnyObject) {
-        self.performSegueWithIdentifier("webtohome", sender: self)
+    @IBAction func gohome(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "webtohome", sender: self)
         //back to home button
     }
     

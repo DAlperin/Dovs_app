@@ -16,8 +16,8 @@ class ViewController3: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func back1(sender: AnyObject) {
-        self.performSegueWithIdentifier("back3", sender: self)
+    @IBAction func back1(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "back3", sender: self)
         //goes back a page
     }
     

@@ -10,6 +10,10 @@
 		1804642E1CBF0BCF0019A0C1 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */; };
 		180464321CBFC2700019A0C1 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464311CBFC2700019A0C1 /* ViewController3.swift */; };
 		180464381CBFF0BE0019A0C1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180464371CBFF0BE0019A0C1 /* ViewController4.swift */; };
+		182375661D14397D00DC4DB7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182375651D14397D00DC4DB7 /* NotificationCenter.framework */; };
+		182375691D14397D00DC4DB7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182375681D14397D00DC4DB7 /* TodayViewController.swift */; };
+		1823756C1D14397D00DC4DB7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1823756A1D14397D00DC4DB7 /* MainInterface.storyboard */; };
+		182375701D14397D00DC4DB7 /* DovAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 182375641D14397D00DC4DB7 /* DovAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		184806EE1CCEA03600763E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184806ED1CCEA03600763E00 /* Images.xcassets */; };
 		18E2A4391CBEBEFE001DF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */; };
 		18E2A43B1CBEBEFE001DF460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A43A1CBEBEFE001DF460 /* ViewController.swift */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1823756E1D14397D00DC4DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E2A42D1CBEBEFE001DF460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182375631D14397C00DC4DB7;
+			remoteInfo = DovAppExtension;
+		};
 		18E2A44A1CBEBEFF001DF460 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18E2A42D1CBEBEFE001DF460 /* Project object */;
@@ -30,10 +41,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		182375741D14397D00DC4DB7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				182375701D14397D00DC4DB7 /* DovAppExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1804642D1CBF0BCF0019A0C1 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		180464311CBFC2700019A0C1 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		180464371CBFF0BE0019A0C1 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		182375641D14397D00DC4DB7 /* DovAppExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DovAppExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		182375651D14397D00DC4DB7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		182375681D14397D00DC4DB7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1823756B1D14397D00DC4DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1823756D1D14397D00DC4DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +79,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		182375611D14397C00DC4DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182375661D14397D00DC4DB7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E2A4321CBEBEFE001DF460 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182375671D14397D00DC4DB7 /* DovAppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				182375681D14397D00DC4DB7 /* TodayViewController.swift */,
+				1823756A1D14397D00DC4DB7 /* MainInterface.storyboard */,
+				1823756D1D14397D00DC4DB7 /* Info.plist */,
+			);
+			name = DovAppExtension;
+			path = ../DovAppExtension;
+			sourceTree = "<group>";
+		};
 		183C7EBA1D00AB5100CF496F /* View controllers code */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +151,7 @@
 			children = (
 				18E2A4351CBEBEFE001DF460 /* Dovs App.app */,
 				18E2A4491CBEBEFF001DF460 /* Dovs AppTests.xctest */,
+				182375641D14397D00DC4DB7 /* DovAppExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +159,7 @@
 		18E2A4371CBEBEFE001DF460 /* Dovs App */ = {
 			isa = PBXGroup;
 			children = (
+				182375671D14397D00DC4DB7 /* DovAppExtension */,
 				18E9EFB01D0894480076D452 /* MISSION CRITICAL */,
 				183C7EBB1D00AD2400CF496F /* Storyboards */,
 				183C7EBA1D00AB5100CF496F /* View controllers code */,
@@ -130,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				18E9EFAC1D0890C80076D452 /* MapKit.framework */,
+				182375651D14397D00DC4DB7 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +207,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		182375631D14397C00DC4DB7 /* DovAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182375711D14397D00DC4DB7 /* Build configuration list for PBXNativeTarget "DovAppExtension" */;
+			buildPhases = (
+				182375601D14397C00DC4DB7 /* Sources */,
+				182375611D14397C00DC4DB7 /* Frameworks */,
+				182375621D14397C00DC4DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DovAppExtension;
+			productName = DovAppExtension;
+			productReference = 182375641D14397D00DC4DB7 /* DovAppExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		18E2A4341CBEBEFE001DF460 /* Dovs App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E2A4521CBEBEFF001DF460 /* Build configuration list for PBXNativeTarget "Dovs App" */;
@@ -162,10 +231,12 @@
 				18E2A4311CBEBEFE001DF460 /* Sources */,
 				18E2A4321CBEBEFE001DF460 /* Frameworks */,
 				18E2A4331CBEBEFE001DF460 /* Resources */,
+				182375741D14397D00DC4DB7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1823756F1D14397D00DC4DB7 /* PBXTargetDependency */,
 			);
 			name = "Dovs App";
 			productName = "Dovs App";
@@ -196,13 +267,21 @@
 		18E2A42D1CBEBEFE001DF460 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Dov Alperin";
 				TargetAttributes = {
+					182375631D14397C00DC4DB7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K53W56QQ98;
+						DevelopmentTeamName = "Helium Foot Software";
+						ProvisioningStyle = Automatic;
+					};
 					18E2A4341CBEBEFE001DF460 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = K53W56QQ98;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -214,6 +293,7 @@
 					};
 					18E2A4481CBEBEFF001DF460 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 18E2A4341CBEBEFE001DF460;
 					};
 				};
@@ -233,11 +313,20 @@
 			targets = (
 				18E2A4341CBEBEFE001DF460 /* Dovs App */,
 				18E2A4481CBEBEFF001DF460 /* Dovs AppTests */,
+				182375631D14397C00DC4DB7 /* DovAppExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		182375621D14397C00DC4DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1823756C1D14397D00DC4DB7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E2A4331CBEBEFE001DF460 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +348,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		182375601D14397C00DC4DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182375691D14397D00DC4DB7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E2A4311CBEBEFE001DF460 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +379,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1823756F1D14397D00DC4DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182375631D14397C00DC4DB7 /* DovAppExtension */;
+			targetProxy = 1823756E1D14397D00DC4DB7 /* PBXContainerItemProxy */;
+		};
 		18E2A44B1CBEBEFF001DF460 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18E2A4341CBEBEFE001DF460 /* Dovs App */;
@@ -290,6 +392,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1823756A1D14397D00DC4DB7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1823756B1D14397D00DC4DB7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		18E2A43C1CBEBEFE001DF460 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,6 +419,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		182375721D14397D00DC4DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = DovAppExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp.DovAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		182375731D14397D00DC4DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DovAppExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp.DovAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		18E2A4501CBEBEFF001DF460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +538,7 @@
 		18E2A4531CBEBEFF001DF460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
@@ -405,12 +547,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c0c1b40c-bc3a-4f7c-85b5-1a39b4db1873";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		18E2A4541CBEBEFF001DF460 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
@@ -419,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Dovs-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dovs App.app/Dovs App";
 			};
 			name = Debug;
@@ -443,6 +589,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Dovs-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dovs App.app/Dovs App";
 			};
 			name = Release;
@@ -450,6 +597,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		182375711D14397D00DC4DB7 /* Build configuration list for PBXNativeTarget "DovAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182375721D14397D00DC4DB7 /* Debug */,
+				182375731D14397D00DC4DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		18E2A4301CBEBEFE001DF460 /* Build configuration list for PBXProject "Dovs App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
