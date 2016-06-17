@@ -22,12 +22,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(pushNotificationSettings)
         application.registerForRemoteNotifications()
         //sets up push notifications
+        
+        
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        let notification = UILocalNotification()
+        notification.fireDate = NSDate(timeIntervalSinceNow: 60) as Date
+        notification.alertBody = "Hey you! You have not opened this app in a bit"
+        notification.alertAction = "be awesome!"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.userInfo = ["CustomField1": "w00t"]
+        UIApplication.shared().scheduleLocalNotification(notification)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
