@@ -14,6 +14,7 @@
 		182375691D14397D00DC4DB7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182375681D14397D00DC4DB7 /* TodayViewController.swift */; };
 		1823756C1D14397D00DC4DB7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1823756A1D14397D00DC4DB7 /* MainInterface.storyboard */; };
 		182375701D14397D00DC4DB7 /* DovAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 182375641D14397D00DC4DB7 /* DovAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		182375781D14A9AF00DC4DB7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182375651D14397D00DC4DB7 /* NotificationCenter.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		184806EE1CCEA03600763E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184806ED1CCEA03600763E00 /* Images.xcassets */; };
 		18E2A4391CBEBEFE001DF460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */; };
 		18E2A43B1CBEBEFE001DF460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A43A1CBEBEFE001DF460 /* ViewController.swift */; };
@@ -31,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 182375631D14397C00DC4DB7;
 			remoteInfo = DovAppExtension;
+		};
+		1823757F1D14AD4500DC4DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86E0A711188DB16700BC71FD;
+			remoteInfo = BBUDebuggerTuckAway;
 		};
 		18E2A44A1CBEBEFF001DF460 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +73,7 @@
 		1823756B1D14397D00DC4DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1823756D1D14397D00DC4DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182375751D143F1700DC4DB7 /* Dovs App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Dovs App.entitlements"; sourceTree = "<group>"; };
+		1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BBUDebuggerTuckAway.xcodeproj; path = ../../BBUDebuggerTuckAway/BBUDebuggerTuckAway.xcodeproj; sourceTree = "<group>"; };
 		184806ED1CCEA03600763E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E2A4351CBEBEFE001DF460 /* Dovs App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dovs App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A4381CBEBEFE001DF460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182375781D14A9AF00DC4DB7 /* NotificationCenter.framework in Frameworks */,
 				18E9EFAD1D0890C80076D452 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +125,14 @@
 			);
 			name = DovAppExtension;
 			path = ../DovAppExtension;
+			sourceTree = "<group>";
+		};
+		1823757C1D14AD4400DC4DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182375801D14AD4500DC4DB7 /* BBUDebuggerTuckAway.xcplugin */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		183C7EBA1D00AB5100CF496F /* View controllers code */ = {
@@ -160,6 +178,7 @@
 		18E2A4371CBEBEFE001DF460 /* Dovs App */ = {
 			isa = PBXGroup;
 			children = (
+				1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */,
 				182375671D14397D00DC4DB7 /* DovAppExtension */,
 				18E9EFB01D0894480076D452 /* MISSION CRITICAL */,
 				183C7EBB1D00AD2400CF496F /* Storyboards */,
@@ -284,6 +303,7 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = K53W56QQ98;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -314,6 +334,12 @@
 			mainGroup = 18E2A42C1CBEBEFE001DF460;
 			productRefGroup = 18E2A4361CBEBEFE001DF460 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1823757C1D14AD4400DC4DB7 /* Products */;
+					ProjectRef = 1823757B1D14AD4400DC4DB7 /* BBUDebuggerTuckAway.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18E2A4341CBEBEFE001DF460 /* Dovs App */,
@@ -322,6 +348,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		182375801D14AD4500DC4DB7 /* BBUDebuggerTuckAway.xcplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BBUDebuggerTuckAway.xcplugin;
+			remoteRef = 1823757F1D14AD4500DC4DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		182375621D14397C00DC4DB7 /* Resources */ = {
@@ -547,13 +583,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dovs App/Dovs App.entitlements";
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c0c1b40c-bc3a-4f7c-85b5-1a39b4db1873";
+				PROVISIONING_PROFILE_SPECIFIER = "K53W56QQ98/DovsApp development";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -564,13 +603,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Dovs App/Dovs App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Dovs App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heliumfoot.DovsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c0c1b40c-bc3a-4f7c-85b5-1a39b4db1873";
+				PROVISIONING_PROFILE_SPECIFIER = "K53W56QQ98/DovsApp development";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
