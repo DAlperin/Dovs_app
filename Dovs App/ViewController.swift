@@ -14,9 +14,20 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.shook.isHidden = true
+        self.name.center.x  -= view.bounds.width
+        self.Button1_outlet.center.x -= view.bounds.width
+        self.Button2_outlet.center.x -= view.bounds.width
+        UIView.animate(withDuration: 0.5, animations: {
+            self.name.center.x += self.view.bounds.width
+            self.Button1_outlet.center.x += self.view.bounds.width
+            self.Button2_outlet.center.x += self.view.bounds.width
+            
+        })
     }
     @IBOutlet var name: UILabel!
     @IBOutlet var shook: UILabel!
+    @IBOutlet var Button1_outlet: UIButton!
+    @IBOutlet var Button2_outlet: UIButton!
     
     override func motionEnded(_ motion: UIEventSubtype,
                               with event: UIEvent?) {
