@@ -17,10 +17,16 @@ class ViewController: UIViewController{
         self.Button1_outlet.center.x -= view.bounds.width
         self.Button2_outlet.center.x -= view.bounds.width
         self.togglecntrl.center.x -= view.bounds.width
-        UIView.animate(withDuration: 1.5, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             self.name.center.x += self.view.bounds.width
+        })
+        UIView.animate(withDuration: 0.99, animations: {
             self.Button1_outlet.center.x += self.view.bounds.width
+        })
+        UIView.animate(withDuration: 1.2, animations: {
             self.Button2_outlet.center.x += self.view.bounds.width
+        })
+        UIView.animate(withDuration: 1.5, animations: {
             self.togglecntrl.center.x += self.view.bounds.width
         })
     }
@@ -105,26 +111,6 @@ class ViewController: UIViewController{
             break; 
         }
     }
-    /* func authenticateUser() {
-    let context : LAContext = LAContext()
-        var error : NSError?
-        let myLocalizedReasonString : NSString = "Authentication is required"
-        if context.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {}
-        context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString as String, reply: { (success : Bool, evaluationError : NSError?) -> Void in })
-        
-        func loadData() {
-            // Will call this if authentification succededs
-            print("Success")
-           
-        }
-        
-        if success {
-            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-            loadData()
-            })
-        }
-        
-    } */
     //above code is the start of a touch id authentification.
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
