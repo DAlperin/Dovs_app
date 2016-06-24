@@ -11,13 +11,13 @@ import UIKit
 class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        func loadscreen() {
         self.shook.isHidden = true
         self.name.center.x  -= view.bounds.width
         self.Button1_outlet.center.x -= view.bounds.width
         self.Button2_outlet.center.x -= view.bounds.width
         self.togglecntrl.center.x -= view.bounds.width
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: 0.4, animations: {
             self.name.center.x += self.view.bounds.width
         })
         UIView.animate(withDuration: 0.99, animations: {
@@ -29,6 +29,8 @@ class ViewController: UIViewController{
         UIView.animate(withDuration: 1.5, animations: {
             self.togglecntrl.center.x += self.view.bounds.width
         })
+        }
+        loadscreen()
     }
     @IBOutlet var name: UILabel!
     @IBOutlet var shook: UILabel!
