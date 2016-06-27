@@ -28,7 +28,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         text.text = "Extension"
-        
         completionHandler(NCUpdateResult.newData)
     }
     

@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        func loadscreen() {
         self.shook.isHidden = true
+        func loadscreen() {
         self.name.center.x  -= view.bounds.width
         self.Button1_outlet.center.x -= view.bounds.width
         self.Button2_outlet.center.x -= view.bounds.width

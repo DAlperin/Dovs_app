@@ -9,12 +9,13 @@ import UIKit
 class ViewController2: UIViewController{
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+    @IBOutlet var name: UILabel!
+    @IBOutlet var button1out: UIButton!
+    @IBOutlet var button2out: UIButton!
+    @IBOutlet var `switch`: UISegmentedControl!
    
     @IBAction func back(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "back", sender: self)

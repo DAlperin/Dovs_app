@@ -30,13 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-        let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 60) as Date
-        notification.alertBody = "Hey you! You have not opened this app in a bit"
-        notification.alertAction = "Come On"
-        notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = ["CustomField1": "w00t"]
-        UIApplication.shared().scheduleLocalNotification(notification)
+        let notif1 = UILocalNotification()
+        notif1.fireDate = NSDate(timeIntervalSinceNow: 60) as Date
+        notif1.alertBody = "Hey you! You have not opened this app in a bit"
+        notif1.alertAction = "Come On"
+        notif1.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.shared().scheduleLocalNotification(notif1)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {

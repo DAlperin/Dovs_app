@@ -72,7 +72,7 @@
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="Si0-Gm-8D2" secondAttribute="centerX" id="Dno-Z9-Rs5"/>
                             <constraint firstItem="0xW-4D-V2h" firstAttribute="centerX" secondItem="9mU-bB-bAj" secondAttribute="centerX" id="Dwe-ka-EJQ"/>
                             <constraint firstItem="Si0-Gm-8D2" firstAttribute="bottom" secondItem="5o6-9E-Owa" secondAttribute="top" id="L9w-Wm-0hb"/>
-                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" constant="1" id="ib2-JK-uEh"/>
+                            <constraint firstItem="0xW-4D-V2h" firstAttribute="centerY" secondItem="9mU-bB-bAj" secondAttribute="centerY" id="ib2-JK-uEh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -243,7 +243,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="FZs-lF-MG6"/>
-                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" constant="2" id="NbZ-ki-Dv6"/>
+                            <constraint firstItem="5kh-m1-t8d" firstAttribute="centerY" secondItem="9hg-1n-yFt" secondAttribute="centerY" constant="1" id="NbZ-ki-Dv6"/>
                             <constraint firstItem="jPF-tb-W5T" firstAttribute="bottom" secondItem="jOd-Kc-eH6" secondAttribute="top" id="XZz-K3-b3D"/>
                             <constraint firstItem="jPF-tb-W5T" firstAttribute="centerX" secondItem="5kh-m1-t8d" secondAttribute="centerX" id="fYH-b3-ji4"/>
                             <constraint firstItem="5kh-m1-t8d" firstAttribute="centerX" secondItem="9hg-1n-yFt" secondAttribute="centerX" id="rZG-GE-GKk"/>
@@ -257,6 +257,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="button1out" destination="bbD-V0-QEq" id="tYV-Ch-Wgp"/>
+                        <outlet property="button2out" destination="dik-od-thY" id="dz3-Ir-Z0t"/>
+                        <outlet property="name" destination="jFZ-9o-BRa" id="p2l-hO-Jbe"/>
+                        <outlet property="switch" destination="Qwl-s4-iHd" id="xGr-aO-Y6i"/>
                         <segue destination="RQf-kd-ywE" kind="show" identifier="2to3" id="D1L-f5-afr"/>
                         <segue destination="XBx-I2-wSD" kind="show" identifier="back" id="umn-73-qV6"/>
                         <segue destination="XBx-I2-wSD" kind="show" identifier="back1" id="Ct3-6J-4H1"/>
