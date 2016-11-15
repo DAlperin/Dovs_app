@@ -5,6 +5,7 @@
 //  Created by Dov Alperin on 4/13/16.
 //  Copyright © 2016 Dov Alperin. All rights reserved.
 //  Comment
+//  Comment test
 
 import UIKit
 
@@ -35,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notif1.alertBody = "Hey you! You have not opened this app in a bit"
         notif1.alertAction = "Come On"
         notif1.soundName = UILocalNotificationDefaultSoundName
-        UIApplication.shared().scheduleLocalNotification(notif1)
+        UIApplication.shared.scheduleLocalNotification(notif1)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
