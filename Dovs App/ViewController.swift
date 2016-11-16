@@ -51,6 +51,7 @@ class ViewController: UIViewController{
         self.present(alertController, animated: true, completion: nil)
         }
     }
+    
     @IBAction func Button1(_ sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App Other button", message:
             "Go to browser?", preferredStyle: UIAlertControllerStyle.alert)
@@ -69,6 +70,8 @@ class ViewController: UIViewController{
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    
     @IBAction func Button2(_ sender: AnyObject) {
         let alertController = UIAlertController(title: "Dov's App", message:
             "Hello, world!", preferredStyle: UIAlertControllerStyle.alert)
@@ -78,29 +81,37 @@ class ViewController: UIViewController{
             self.performSegue(withIdentifier: "onetotwo", sender: self)
             //if ok from the popup alert is clicked
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
             UIAlertAction in
             self.cancelfunction()
             //if cancel from the popup alert is clicked
         }
+        
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
         //alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         // alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil ))
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    
     func okfunctionother() {
      //Button1 alert on ok click
     }
+    
     func cancelfunctionother() {
      //Button1 alert on cancel click
     }
+    
     func okfunction() {
         //Button2 alert on ok click
     }
+    
     func cancelfunction() {
         //Button2 alert on cancel click
     }
+    
     @IBAction func and2(_ sender: AnyObject) {
         switch sender.selectedSegmentIndex {
             //toggle
@@ -113,7 +124,7 @@ class ViewController: UIViewController{
             break; 
         }
     }
-    //above code is the start of a touch id authentification.
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

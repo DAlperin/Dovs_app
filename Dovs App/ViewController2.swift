@@ -11,6 +11,11 @@ class ViewController2: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.name.center.x -= view.bounds.width
+        self.button1out.center.x -= view.bounds.width
+        self.button2out.center.x -= view.bounds.width
+        self.switch.center.x -= view.bounds.width
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBOutlet var name: UILabel!
